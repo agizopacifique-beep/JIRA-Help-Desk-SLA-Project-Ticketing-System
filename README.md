@@ -9,7 +9,7 @@
 
 ## What This Is
 
-I built this lab because the role I was targeting asked specifically for JIRA experience -- SLA tracking, escalation workflows, and a quarterly optimization review. I didn't have that on paper, so I built the environment from scratch to show I understood the work, not just the terminology.
+Help desk failures are rarely about missing technical knowledge. They happen because a ticket sat unacknowledged too long, or an SLA breach didn't trigger anything until someone complained. This project builds the infrastructure that catches those gaps automatically -- SLA rules, escalation logic, and automation that runs without anyone having to remember to check.
 
 The project runs on Jira Service Management's free tier. I set up a full IT help desk for a fictional company called TechBridge IT Help Desk, configured priority-based SLA rules that match real enterprise targets, wired up three automation rules to handle ticket assignment and escalation without manual steps, then ran 9 tickets through the system from open to resolved.
 
