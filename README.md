@@ -1,4 +1,4 @@
-**# JIRA Help Desk SLA Project — Ticketing System
+# JIRA Help Desk SLA Project — Ticketing System
 
 ![Jira Service Management](https://img.shields.io/badge/Jira_Service_Management-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![SLA Tracking](https://img.shields.io/badge/SLA_Tracking-Active-1D9E75?style=for-the-badge)
@@ -8,16 +8,19 @@
 ---
 
 ## What This Is
+
 This project is a fully functional IT help desk environment built in Jira Service Management. The goal was hands-on practice with the tools enterprises actually use -- not just reading about them. I configured the SLA framework, wired up automation rules, and ran real ticket scenarios through the system from open to resolved.
-The setup covers what most IT support roles expect on day one: knowing how tickets move, when escalation kicks in, and what a breach looks like before it becomes a problem
 
-
-## The Problem I Was Solving
-
-Most help desk failures aren't technical. They happen because nobody noticed a ticket sat unacknowledged for six hours, or because an SLA breach didn't trigger anything until a manager asked. This project builds the infrastructure that catches those problems automatically -- the same infrastructure the job description asked for by name.
+The setup covers what most IT support roles expect on day one: knowing how tickets move, when escalation kicks in, and what a breach looks like before it becomes a problem.
 
 ---
+
+## The Problem This Solves
+
 Help desk failures are rarely about missing technical knowledge. They happen because a ticket sat unacknowledged too long, or an SLA breach triggered nothing until someone complained. This project builds the infrastructure that catches those gaps automatically -- SLA rules, escalation logic, and automation that runs without anyone having to remember to check.
+
+---
+
 ## What I Built
 
 ### SLA Framework
@@ -25,14 +28,14 @@ Help desk failures are rarely about missing technical knowledge. They happen bec
 Three SLA rules, priority-based across five levels:
 
 | Priority | First Response | Resolution |
-|----------|---------------|------------|
+|---|---|---|
 | Highest | 2 hours | 12 hours |
 | High | 4 hours | 24 hours |
 | Medium | 6 hours | 36 hours |
 | Low | 8 hours | 48 hours |
 | All remaining | 12 hours | 60 hours (3 business days) |
 
-The 4-hour high-priority response and 3-business-day resolution targets are pulled directly from the job description I was targeting. An employer gets someone who already knows what the SLA targets should be and how to configure them.
+The 4-hour high-priority response and 3-business-day resolution targets reflect real enterprise IT support standards.
 
 ---
 
@@ -41,7 +44,7 @@ The 4-hour high-priority response and 3-business-day resolution targets are pull
 Three rules running without any manual steps:
 
 | Rule | Trigger | Action |
-|------|---------|--------|
+|---|---|---|
 | Auto-assign | New ticket created | Assigns to agent using balanced workload |
 | SLA Warning | 30 minutes before breach | Adds comment notifying assignee to act |
 | SLA Escalation | SLA breached | Flips priority to Highest, adds escalation comment |
@@ -55,7 +58,7 @@ No one has to remember to check. The system handles it.
 Nine tickets across real IT support scenarios, each opened, worked, commented, and resolved:
 
 | Key | Summary | Priority | Status |
-|-----|---------|----------|--------|
+|---|---|---|---|
 | SUP-1 | User locked out of Microsoft 365 | Highest | Resolved |
 | SUP-2 | Password reset request - Finance department | Medium | Resolved |
 | SUP-3 | VPN not connecting - remote user | High | Resolved |
@@ -74,14 +77,14 @@ Nine tickets across real IT support scenarios, each opened, worked, commented, a
 - 3 automation rules eliminating manual escalation steps
 - 3 SLA tiers configured across 5 priority levels
 - 0 tickets left unresolved
-- 4-hour first response target matched exactly to enterprise IT support requirements
+- 4-hour first response target matched to enterprise IT support standards
 - 3-business-day resolution target enforced by automation, not manual follow-up
 
 ---
 
 ## The Quarterly Review Connection
 
-The job description required a Quarterly Ticketing and Version Control Optimization Review -- a formal report on ticket resolution performance and workflow gaps. My [Help Desk Documentation System](https://github.com/agizopacifique-beep/helpdesk-documentation) lab produced exactly that kind of report. This JIRA lab is the live system that feeds it.
+A real IT support role requires periodic reporting on ticket resolution performance, workflow gaps, and process improvement recommendations. My [Help Desk Documentation System](https://github.com/agizopacifique-beep/helpdesk-documentation) lab produced exactly that kind of report. This JIRA lab is the live system that feeds it.
 
 ---
 
@@ -91,16 +94,18 @@ The job description required a Quarterly Ticketing and Version Control Optimizat
 JIRA-Help-Desk-SLA-Project-Ticketing-System/
 ├── README.md
 └── screenshots/
-    ├── 01-project-overview.png
+    ├── 01-jira-dashboard.png
     ├── 02-sla-config-overview.png
-    ├── 03-sla-first-response.png
-    ├── 04-sla-resolution.png
-    ├── 05-automation-rules-list.png
-    ├── 06-automation-auto-assign.png
-    ├── 07-automation-sla-warning.png
-    ├── 08-automation-escalation.png
-    ├── 09-ticket-queue-all.png
-    ├── 10-ticket-detail-resolved.png
+    ├── 02-sla-first-response.png
+    ├── 03-sla-resolution.png
+    ├── 04-automation-rules-list.png
+    ├── 04-automation-templates.png
+    ├── 05-automation-auto-assign.png
+    ├── 06-automation-sla-warning.png
+    ├── 07-automation-escalation.png
+    ├── 08-ticket-queue-all.png
+    ├── 09-ticket-detail-SUP1.png
+    ├── 10-sla-report.png
     ├── 11-sla-report.png
     └── 12-queue-resolved.png
 ```
@@ -110,25 +115,25 @@ JIRA-Help-Desk-SLA-Project-Ticketing-System/
 ## Skills This Project Covers
 
 **Ticketing and ITSM**
-Jira Service Management · SLA configuration · Escalation procedures · Queue management · Ticket triage · First-contact resolution · ITSM best practices
+Jira Service Management, SLA configuration, escalation procedures, queue management, ticket triage, first-contact resolution, ITSM best practices
 
 **Automation**
-Jira automation rules · SLA breach workflows · Auto-assignment · Notification triggers · Escalation logic
+Jira automation rules, SLA breach workflows, auto-assignment, notification triggers, escalation logic
 
 **Documentation and Reporting**
-Ticket resolution documentation · SLA performance reporting · Process improvement analysis · Quarterly review methodology
+Ticket resolution documentation, SLA performance reporting, process improvement analysis, quarterly review methodology
 
 **IT Support Scenarios**
-Account lockouts · Password resets · VPN troubleshooting · Software installation · Hardware setup · Offboarding procedures · Access management
+Account lockouts, password resets, VPN troubleshooting, software installation, hardware setup, offboarding procedures, access management
 
 ---
 
 ## Environment
 
 | Component | Details |
-|-----------|---------|
+|---|---|
 | Platform | Jira Service Management (Free Tier) |
-| Project Name | TechBridge IT Help Desk1 |
+| Project Name | TechBridge IT Help Desk |
 | Project Key | SUP |
 | SLA Rules | 3 configured |
 | Automation Rules | 3 active |
@@ -149,4 +154,3 @@ IT Help Desk Support Engineer | Active Directory & Identity Specialist
 ---
 
 *Every result in this project is real, tested, and reproducible.*
-**
