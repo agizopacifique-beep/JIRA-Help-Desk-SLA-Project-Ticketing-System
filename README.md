@@ -9,10 +9,9 @@
 
 ## What This Is
 
-Help desk failures are rarely about missing technical knowledge. They happen because a ticket sat unacknowledged too long, or an SLA breach didn't trigger anything until someone complained. This project builds the infrastructure that catches those gaps automatically -- SLA rules, escalation logic, and automation that runs without anyone having to remember to check.
-
-The project runs on Jira Service Management's free tier. I set up a full IT help desk for a fictional company called TechBridge IT Help Desk, configured priority-based SLA rules that match real enterprise targets, wired up three automation rules to handle ticket assignment and escalation without manual steps, then ran 9 tickets through the system from open to resolved.
-
+What This Is
+This project is a fully functional IT help desk environment built in Jira Service Management. The goal was hands-on practice with the tools enterprises actually use -- not just reading about them. I configured the SLA framework, wired up automation rules, and ran real ticket scenarios through the system from open to resolved.
+The setup covers what most IT support roles expect on day one: knowing how tickets move, when escalation kicks in, and what a breach looks like before it becomes a problem.
 ---
 
 ## The Problem I Was Solving
@@ -20,7 +19,7 @@ The project runs on Jira Service Management's free tier. I set up a full IT help
 Most help desk failures aren't technical. They happen because nobody noticed a ticket sat unacknowledged for six hours, or because an SLA breach didn't trigger anything until a manager asked. This project builds the infrastructure that catches those problems automatically -- the same infrastructure the job description asked for by name.
 
 ---
-
+Help desk failures are rarely about missing technical knowledge. They happen because a ticket sat unacknowledged too long, or an SLA breach triggered nothing until someone complained. This project builds the infrastructure that catches those gaps automatically -- SLA rules, escalation logic, and automation that runs without anyone having to remember to check.
 ## What I Built
 
 ### SLA Framework
