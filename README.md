@@ -1,4 +1,4 @@
-# JIRA Help Desk SLA Project — Ticketing System
+**# JIRA Help Desk SLA Project — Ticketing System
 
 ![Jira Service Management](https://img.shields.io/badge/Jira_Service_Management-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![SLA Tracking](https://img.shields.io/badge/SLA_Tracking-Active-1D9E75?style=for-the-badge)
@@ -8,11 +8,10 @@
 ---
 
 ## What This Is
-
-What This Is
-This project is a fully functional IT help desk environment built in Jira Service Management. The goal was hands-on practice with the tools enterprises actually use -- not just reading about them. I configured the SLA framework, wired up automation rules, and ran real ticket scenarios through the system from open to resolved.
-The setup covers what most IT support roles expect on day one: knowing how tickets move, when escalation kicks in, and what a breach looks like before it becomes a problem.
----
+**
+**This project is a fully functional IT help desk environment built in Jira Service Management. The goal was hands-on practice with the tools enterprises actually use -- not just reading about them. I configured the SLA framework, wired up automation rules, and ran real ticket scenarios through the system from open to resolved.
+The setup covers what most IT support roles expect on day one: knowing how tickets move, when escalation kicks in, and what a breach looks like before it becomes a problem.**
+---**
 
 ## The Problem I Was Solving
 
@@ -151,3 +150,4 @@ IT Help Desk Support Engineer | Active Directory & Identity Specialist
 ---
 
 *Every result in this project is real, tested, and reproducible.*
+**
